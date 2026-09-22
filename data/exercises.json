@@ -43,5 +43,215 @@
     "steps": ["Apoya un pie completo sobre una plataforma estable.", "Sube de forma controlada hasta quedar sobre la plataforma.", "Baja con control y alterna la pierna."],
     "mistakes": ["Utilizar una plataforma inestable.", "Bajar dejandose caer."],
     "video": "assets/videos/step_up.mp4", "image": "assets/images/exercises/step_up.jpg"
+  },
+  {
+    "id": "plancha_normal", "name": "Plancha normal (flexiones)", "english_name": "Standard push-up",
+    "summary": "Empuje con peso corporal", "group": "Tren superior", "equipment": "Peso corporal",
+    "muscles": ["Pectorales", "Triceps", "Deltoides anteriores"], "level": "Intermedio",
+    "description": "Flexion de brazos con apoyo de manos y pies; no es una plancha estatica.",
+    "steps": ["Apoya las manos ligeramente mas separadas que los hombros y extiende las piernas.", "Mantiene el abdomen activo y el cuerpo alineado mientras flexionas los codos para bajar con control.", "Empuja el suelo para regresar a la posicion inicial sin dejar caer la cadera."],
+    "mistakes": ["Hundir la cadera o elevarla durante la repeticion.", "Bajar sin control o adelantar la cabeza para alcanzar el suelo."],
+    "video": "assets/videos/plancha_normal.mp4", "image": "assets/images/exercises/plancha_normal.jpg"
+  },
+  {
+    "id": "plancha_abierta", "name": "Plancha abierta (flexiones)", "english_name": "Wide push-up",
+    "summary": "Apoyo de manos amplio", "group": "Tren superior", "equipment": "Peso corporal",
+    "muscles": ["Pectorales", "Triceps", "Deltoides anteriores"], "level": "Intermedio",
+    "description": "Flexion de brazos con las manos mas separadas que en la variante normal.",
+    "steps": ["Coloca las manos algo mas abiertas que en una flexion normal, con una separacion comoda.", "Mantiene el cuerpo alineado y flexiona los codos para descender de forma controlada.", "Empuja el suelo y regresa a la posicion inicial manteniendo el control del tronco."],
+    "mistakes": ["Separar las manos en exceso o forzar una posicion incomoda de hombros.", "Dejar caer la cadera o rebotar al bajar."],
+    "video": "assets/videos/plancha_abierta.mp4", "image": "assets/images/exercises/plancha_abierta.jpg"
+  },
+  {
+    "id": "plancha_diamante", "name": "Plancha diamante (flexiones)", "english_name": "Diamond push-up",
+    "summary": "Apoyo de manos cerrado", "group": "Tren superior", "equipment": "Peso corporal",
+    "muscles": ["Triceps", "Pectorales", "Deltoides anteriores"], "level": "Avanzado",
+    "description": "Flexion de brazos con las manos juntas formando un diamante con pulgares e indices.",
+    "steps": ["Coloca las manos juntas bajo el pecho, formando un diamante si la posicion resulta comoda para las munecas.", "Mantiene el cuerpo alineado y baja con control, dejando que los codos se flexionen cerca del tronco.", "Empuja el suelo hasta regresar a la posicion inicial sin hundir la cadera."],
+    "mistakes": ["Forzar la posicion de las manos cuando resulta incomoda.", "Perder la alineacion del cuerpo o bajar sin control."],
+    "video": "assets/videos/plancha_diamante.mp4", "image": "assets/images/exercises/plancha_diamante.jpg"
+  },
+  {
+    "id": "plancha_pica",
+    "name": "Plancha pica (flexiones)",
+    "english_name": "Pike push-up",
+    "summary": "Empuje con cadera elevada",
+    "group": "Tren superior",
+    "equipment": "Peso corporal",
+    "muscles": [
+      "Deltoides anteriores",
+      "Triceps"
+    ],
+    "level": "Intermedio",
+    "description": "Flexion con el cuerpo en V invertida y la cadera elevada.",
+    "steps": [
+      "Apoya manos y pies y eleva la cadera formando una V invertida.",
+      "Flexiona los codos y acerca la cabeza al suelo por delante de las manos, sin apoyar peso sobre ella.",
+      "Empuja el suelo para extender los brazos manteniendo la cadera elevada."
+    ],
+    "mistakes": [
+      "Apoyar el peso sobre la cabeza o perder el control al bajar.",
+      "Convertir el movimiento en una flexion normal bajando la cadera."
+    ],
+    "video": "assets/videos/plancha_pica.mp4",
+    "image": "assets/images/exercises/plancha_pica.jpg"
+  },
+  {
+    "id": "plancha_mike_tyson",
+    "name": "Plancha Mike Tyson (flexiones)",
+    "english_name": "Mike Tyson push-up",
+    "summary": "Balanceo y empuje",
+    "group": "Tren superior",
+    "equipment": "Pared",
+    "muscles": [
+      "Pectorales",
+      "Triceps",
+      "Deltoides anteriores",
+      "Abdominales"
+    ],
+    "level": "Avanzado",
+    "description": "Variante dinamica con pies contra una pared: combina desplazamiento de cadera hacia atras y flexion de brazos.",
+    "steps": [
+      "Apoya las manos en el suelo y coloca los pies contra una pared firme, sin deslizamientos.",
+      "Flexiona las rodillas y lleva la cadera hacia los talones manteniendo las manos apoyadas.",
+      "Desplaza el cuerpo hacia delante, realiza una flexion controlada y empuja para volver a llevar la cadera atras."
+    ],
+    "mistakes": [
+      "Lanzar el cuerpo hacia delante sin controlar el descenso.",
+      "Perder el apoyo de los pies o hundir la zona lumbar."
+    ],
+    "video": "assets/videos/plancha_mike_tyson.mp4",
+    "image": "assets/images/exercises/plancha_mike_tyson.jpg"
+  },
+  {
+    "id": "plancha_arquero",
+    "name": "Plancha arquero (flexiones)",
+    "english_name": "Archer push-up",
+    "summary": "Empuje con carga lateral",
+    "group": "Tren superior",
+    "equipment": "Peso corporal",
+    "muscles": [
+      "Pectorales",
+      "Triceps",
+      "Deltoides anteriores"
+    ],
+    "level": "Avanzado",
+    "description": "Flexion con apoyo amplio y desplazamiento hacia un brazo mientras el otro ayuda extendido.",
+    "steps": [
+      "Separa las manos y establece un apoyo estable con manos y pies.",
+      "Desplaza el pecho hacia una mano flexionando ese codo, mientras el brazo contrario permanece casi extendido.",
+      "Empuja para volver al centro y alterna el lado con control."
+    ],
+    "mistakes": [
+      "Forzar el codo del brazo extendido.",
+      "Girar el tronco o dejar caer la cadera durante el desplazamiento."
+    ],
+    "video": "assets/videos/plancha_arquero.mp4",
+    "image": "assets/images/exercises/plancha_arquero.jpg"
+  },
+  {
+    "id": "plancha_espartana",
+    "name": "Plancha espartana (flexiones)",
+    "english_name": "Spartan push-up",
+    "summary": "Cambio explosivo de apoyos",
+    "group": "Tren superior",
+    "equipment": "Peso corporal",
+    "muscles": [
+      "Pectorales",
+      "Triceps",
+      "Deltoides anteriores",
+      "Abdominales"
+    ],
+    "level": "Avanzado",
+    "description": "Variante pliometrica con manos escalonadas que intercambian su posicion durante el impulso.",
+    "steps": [
+      "Adopta una posicion de flexion con una mano adelantada y la otra mas cerca del tronco.",
+      "Baja con control y empuja con suficiente impulso para despegar brevemente las manos.",
+      "Intercambia los apoyos en el aire y recibe el contacto flexionando los codos antes de repetir."
+    ],
+    "mistakes": [
+      "Aterrizar con los codos rigidos o perder la estabilidad de las manos.",
+      "Intentar el cambio sin dominar primero las flexiones controladas con manos escalonadas."
+    ],
+    "video": "assets/videos/plancha_espartana.mp4",
+    "image": "assets/images/exercises/plancha_espartana.jpg"
+  },
+  {
+    "id": "plancha_inclinada",
+    "name": "Plancha inclinada (flexiones)",
+    "english_name": "Incline push-up",
+    "summary": "Manos elevadas",
+    "group": "Tren superior",
+    "equipment": "Banco o plataforma",
+    "muscles": [
+      "Pectorales",
+      "Triceps",
+      "Deltoides anteriores"
+    ],
+    "level": "Principiante",
+    "description": "Flexion con las manos sobre una superficie elevada y estable.",
+    "steps": [
+      "Apoya las manos en un banco firme y aleja los pies hasta alinear el cuerpo.",
+      "Flexiona los codos acercando el pecho al apoyo sin hundir la cadera.",
+      "Empuja el banco para regresar a la posicion inicial."
+    ],
+    "mistakes": [
+      "Utilizar un apoyo que se deslice o vuelque.",
+      "Doblar el cuerpo por la cintura en lugar de moverlo alineado."
+    ],
+    "video": "assets/videos/plancha_inclinada.mp4",
+    "image": "assets/images/exercises/plancha_inclinada.jpg"
+  },
+  {
+    "id": "plancha_declinada",
+    "name": "Plancha declinada (flexiones)",
+    "english_name": "Decline push-up",
+    "summary": "Pies elevados",
+    "group": "Tren superior",
+    "equipment": "Banco o plataforma",
+    "muscles": [
+      "Pectorales",
+      "Triceps",
+      "Deltoides anteriores"
+    ],
+    "level": "Avanzado",
+    "description": "Flexion con los pies elevados en una plataforma estable y las manos en el suelo.",
+    "steps": [
+      "Apoya los pies en una plataforma baja y firme y coloca las manos en el suelo.",
+      "Mantiene el cuerpo alineado mientras flexionas los codos y acercas el pecho al suelo.",
+      "Empuja el suelo y vuelve a extender los brazos con control."
+    ],
+    "mistakes": [
+      "Usar una plataforma demasiado alta para mantener el control.",
+      "Hundir la cadera o adelantar la cabeza durante el descenso."
+    ],
+    "video": "assets/videos/plancha_declinada.mp4",
+    "image": "assets/images/exercises/plancha_declinada.jpg"
+  },
+  {
+    "id": "plancha_rodillas",
+    "name": "Plancha con rodillas apoyadas (flexiones)",
+    "english_name": "Knee push-up",
+    "summary": "Apoyo adaptado",
+    "group": "Tren superior",
+    "equipment": "Peso corporal",
+    "muscles": [
+      "Pectorales",
+      "Triceps",
+      "Deltoides anteriores"
+    ],
+    "level": "Principiante",
+    "description": "Flexion de brazos con las rodillas apoyadas en el suelo.",
+    "steps": [
+      "Apoya manos y rodillas sobre una superficie comoda y alinea hombros, cadera y rodillas.",
+      "Flexiona los codos para acercar el pecho al suelo manteniendo esa alineacion.",
+      "Empuja el suelo hasta volver a la posicion inicial."
+    ],
+    "mistakes": [
+      "Dejar la cadera atras y mover solo la cabeza.",
+      "Arquear la espalda o bajar sin control."
+    ],
+    "video": "assets/videos/plancha_rodillas.mp4",
+    "image": "assets/images/exercises/plancha_rodillas.jpg"
   }
 ]

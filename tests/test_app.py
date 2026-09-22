@@ -14,7 +14,7 @@ from qhapaqfit.catalog import Favorites, load_catalog, matches
 class CatalogTests(unittest.TestCase):
     def test_catalog_and_accent_insensitive_search(self):
         catalog = load_catalog()
-        self.assertEqual(len(catalog), 5)
+        self.assertEqual(len(catalog), 15)
         self.assertTrue(matches(catalog[0], "cuádriceps squat"))
         self.assertFalse(matches(catalog[0], "mancuernas"))
 
@@ -51,7 +51,7 @@ class WindowTests(unittest.TestCase):
         self.folder.cleanup()
 
     def test_search_filter_and_empty_recovery(self):
-        self.assertEqual(self.window.items.count(), 5)
+        self.assertEqual(self.window.items.count(), 15)
         self.window.search.setText("romanian")
         self.assertEqual(self.window.items.count(), 1)
         self.assertEqual(self.window.current["id"], "peso_muerto_rumano")
@@ -69,9 +69,11 @@ class WindowTests(unittest.TestCase):
         self.window.favorite.click()
         self.assertEqual(self.window.items.count(), 0)
         self.window.set_view(False)
-        self.assertEqual(self.window.items.count(), 5)
+        self.assertEqual(self.window.items.count(), 15)
 
     def test_missing_media_and_resizing(self):
+        self.window.current = dict(self.window.current, video=str(Path(self.folder.name) / "missing.mp4"))
+        self.window.reload_media()
         self.assertEqual(self.window.media.currentIndex(), 0)
         self.assertTrue(self.window.controls.isHidden())
         for width, height in [(1240, 820), (860, 600)]:
@@ -84,7 +86,8 @@ class WindowTests(unittest.TestCase):
 
     def test_image_added_after_opening_is_loaded_on_refresh(self):
         image = Path(self.folder.name) / "exercise.png"
-        self.window.current = dict(self.window.current, image=str(image))
+        self.window.current = dict(self.window.current, image=str(image),
+                                   video=str(Path(self.folder.name) / "missing.mp4"))
         self.window.reload_media()
         self.assertEqual(self.window.placeholder.text(), "Demostracion pendiente")
         pixmap = QPixmap(100, 80)
@@ -93,6 +96,19 @@ class WindowTests(unittest.TestCase):
         self.window.refresh.click()
         self.assertFalse(self.window.placeholder.pixmap().isNull())
         self.assertTrue(self.window.controls.isHidden())
+
+
+    def test_upper_body_filters_and_pushup_search(self):
+        self.window.group.setCurrentText("Tren superior")
+        self.assertEqual(self.window.items.count(), 10)
+        self.window.search.setText("diamond")
+        self.assertEqual(self.window.items.count(), 1)
+        self.assertEqual(self.window.current["id"], "plancha_diamante")
+        self.window.equipment.setCurrentText("Mancuernas")
+        self.assertEqual(self.window.items.count(), 0)
+        self.window.search.clear()
+        self.window.group.setCurrentIndex(0)
+        self.assertEqual(self.window.items.count(), 1)
 
 
 if __name__ == "__main__":

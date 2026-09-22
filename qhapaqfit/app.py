@@ -113,6 +113,11 @@ class Window(QMainWindow):
         filters = QHBoxLayout()
         self.count = label("", "count")
         filters.addWidget(self.count, 1)
+        self.group = QComboBox()
+        self.group.addItem("Todas las zonas")
+        self.group.addItems(sorted({e["group"] for e in self.exercises}))
+        self.group.currentIndexChanged.connect(self.populate)
+        filters.addWidget(self.group)
         self.equipment = QComboBox()
         self.equipment.addItem("Todo el equipamiento")
         self.equipment.addItems(sorted({e["equipment"] for e in self.exercises}))
@@ -244,6 +249,8 @@ class Window(QMainWindow):
                 continue
             if self.only_favorites and exercise["id"] not in saved:
                 continue
+            if self.group.currentIndex() and exercise["group"] != self.group.currentText():
+                continue
             if self.equipment.currentIndex() and exercise["equipment"] != self.equipment.currentText():
                 continue
             item = QListWidgetItem(exercise["name"] + "\n" + exercise["summary"])
@@ -259,7 +266,7 @@ class Window(QMainWindow):
             if exercise["id"] == previous:
                 chosen = item
         self.items.blockSignals(False)
-        self.count.setText(f"{self.items.count()} ejercicios  |  Tren inferior")
+        self.count.setText(f"{self.items.count()} ejercicios")
         if self.items.count():
             self.items.setCurrentItem(chosen or self.items.item(0))
         else:

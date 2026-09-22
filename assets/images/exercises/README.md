@@ -8,6 +8,16 @@ Usa los mismos nombres base de los videos, con extension .jpg o .png.
 - peso_muerto_rumano.jpg
 - elevacion_pantorrillas.jpg
 - step_up.jpg
+- plancha_normal.jpg
+- plancha_abierta.jpg
+- plancha_diamante.jpg
+- plancha_pica.jpg
+- plancha_mike_tyson.jpg
+- plancha_arquero.jpg
+- plancha_espartana.jpg
+- plancha_inclinada.jpg
+- plancha_declinada.jpg
+- plancha_rodillas.jpg
 
 PNG is also supported. Images are optional and ignored by Git by default.
 Tambien se admite PNG. Las imagenes son opcionales y Git las ignora por defecto.

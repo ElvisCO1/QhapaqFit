@@ -24,11 +24,11 @@ completa a tu ejecutable de Python 3.12.
 
 ## Content / Contenido
 
-Five initial exercises, search by Spanish/English name, muscles or equipment,
-equipment filter, local favorites, optional images and MP4 playback with
+Fifteen exercises, search by Spanish/English name, muscles or equipment,
+body-region and equipment filters, local favorites, optional images and MP4 playback with
 pause, seek, loop, mute and volume controls.
-Cinco ejercicios iniciales, busqueda por nombre en espanol/ingles, musculos
-o equipamiento, filtro, favoritos locales, imagenes opcionales y reproduccion
+Quince ejercicios, busqueda por nombre en espanol/ingles, musculos
+o equipamiento, filtros de zona y equipamiento, favoritos locales, imagenes opcionales y reproduccion
 MP4 con pausa, avance, bucle, silencio y control de volumen.
 
 The initial interface is Spanish. Exercise guidance is draft catalog content
@@ -47,6 +47,16 @@ Catalogo: `data/exercises.json`. Conserva estables los identificadores.
 | Peso muerto rumano | `peso_muerto_rumano.mp4` | `peso_muerto_rumano.jpg` |
 | Elevacion de pantorrillas | `elevacion_pantorrillas.mp4` | `elevacion_pantorrillas.jpg` |
 | Step-up | `step_up.mp4` | `step_up.jpg` |
+| Plancha normal (flexiones) | `plancha_normal.mp4` | `plancha_normal.jpg` |
+| Plancha abierta (flexiones) | `plancha_abierta.mp4` | `plancha_abierta.jpg` |
+| Plancha diamante (flexiones) | `plancha_diamante.mp4` | `plancha_diamante.jpg` |
+| Plancha pica (flexiones) | `plancha_pica.mp4` | `plancha_pica.jpg` |
+| Plancha Mike Tyson (flexiones) | `plancha_mike_tyson.mp4` | `plancha_mike_tyson.jpg` |
+| Plancha arquero (flexiones) | `plancha_arquero.mp4` | `plancha_arquero.jpg` |
+| Plancha espartana (flexiones) | `plancha_espartana.mp4` | `plancha_espartana.jpg` |
+| Plancha inclinada (flexiones) | `plancha_inclinada.mp4` | `plancha_inclinada.jpg` |
+| Plancha declinada (flexiones) | `plancha_declinada.mp4` | `plancha_declinada.jpg` |
+| Plancha con rodillas apoyadas (flexiones) | `plancha_rodillas.mp4` | `plancha_rodillas.jpg` |
 
 Videos go in `assets/videos/`; images in `assets/images/exercises/`.
 PNG exercise images are also accepted. Optional muscle images go in
