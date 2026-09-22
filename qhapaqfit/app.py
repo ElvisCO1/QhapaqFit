@@ -53,6 +53,8 @@ class Window(QMainWindow):
     def __init__(self, database=None):
         super().__init__()
         self.setWindowTitle("QhapaqFit")
+        logo_path = ROOT / "assets/branding/qhapaqdata-logo.png"
+        self.setWindowIcon(QIcon(str(logo_path)))
         self.resize(1240, 820)
         self.setMinimumSize(860, 600)
         self.exercises = load_catalog()
@@ -75,6 +77,15 @@ class Window(QMainWindow):
         sidebar.setFixedWidth(190)
         nav = QVBoxLayout(sidebar)
         nav.setContentsMargins(18, 28, 18, 22)
+        self.brand_logo = QLabel()
+        self.brand_logo.setFixedSize(80, 80)
+        self.brand_logo.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.brand_logo.setAccessibleName("QhapaqFit")
+        self.brand_logo.setToolTip("QhapaqFit")
+        self.brand_logo.setPixmap(QPixmap(str(logo_path)).scaled(
+            80, 80, Qt.AspectRatioMode.KeepAspectRatio,
+            Qt.TransformationMode.SmoothTransformation))
+        nav.addWidget(self.brand_logo, 0, Qt.AlignmentFlag.AlignHCenter)
         nav.addWidget(label("QhapaqFit", "brand"))
         nav.addWidget(label("Tu mejor version, hoy", "subtitle"))
         nav.addSpacing(32)
