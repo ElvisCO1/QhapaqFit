@@ -1,0 +1,1 @@
+"""QhapaqFit exercise encyclopedia."""

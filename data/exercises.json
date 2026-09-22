@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sentadilla", "name": "Sentadilla", "english_name": "Squat",
+    "summary": "Fuerza y estabilidad", "group": "Tren inferior", "equipment": "Peso corporal",
+    "muscles": ["Cuadriceps", "Gluteos"], "level": "Principiante",
+    "description": "Movimiento de flexion y extension de caderas y rodillas.",
+    "steps": ["Coloca los pies en una posicion estable y comoda.", "Flexiona caderas y rodillas de forma controlada, manteniendo los talones apoyados.", "Vuelve a la posicion inicial con control."],
+    "mistakes": ["Perder el equilibrio o levantar los talones.", "Bajar sin control del movimiento."],
+    "video": "assets/videos/sentadilla.mp4", "image": "assets/images/exercises/sentadilla.jpg"
+  },
+  {
+    "id": "zancada", "name": "Zancada", "english_name": "Lunge",
+    "summary": "Equilibrio y control", "group": "Tren inferior", "equipment": "Peso corporal",
+    "muscles": ["Cuadriceps", "Gluteos"], "level": "Principiante",
+    "description": "Movimiento con apoyo dividido para trabajar cada pierna.",
+    "steps": ["Da un paso al frente y establece un apoyo estable.", "Flexiona ambas rodillas de forma controlada.", "Regresa a la posicion inicial y alterna la pierna."],
+    "mistakes": ["Usar un paso que impida mantener el equilibrio.", "Golpear el suelo con la rodilla trasera."],
+    "video": "assets/videos/zancada.mp4", "image": "assets/images/exercises/zancada.jpg"
+  },
+  {
+    "id": "peso_muerto_rumano", "name": "Peso muerto rumano", "english_name": "Romanian deadlift",
+    "summary": "Cadena posterior", "group": "Tren inferior", "equipment": "Mancuernas",
+    "muscles": ["Isquiotibiales", "Gluteos"], "level": "Intermedio",
+    "description": "Bisagra de cadera con una ligera flexion de rodillas.",
+    "steps": ["Sujeta las mancuernas cerca del cuerpo, con las rodillas ligeramente flexionadas.", "Lleva la cadera hacia atras y baja las mancuernas con control.", "Extiende la cadera para recuperar la posicion inicial."],
+    "mistakes": ["Alejar la carga del cuerpo.", "Forzar el descenso perdiendo el control de la espalda."],
+    "video": "assets/videos/peso_muerto_rumano.mp4", "image": "assets/images/exercises/peso_muerto_rumano.jpg"
+  },
+  {
+    "id": "elevacion_pantorrillas", "name": "Elevacion de pantorrillas", "english_name": "Calf raise",
+    "summary": "Pantorrillas", "group": "Tren inferior", "equipment": "Peso corporal",
+    "muscles": ["Gastrocnemio", "Soleo"], "level": "Principiante",
+    "description": "Elevacion de talones en posicion de pie.",
+    "steps": ["Colocate de pie y utiliza un apoyo estable si lo necesitas.", "Eleva los talones de forma controlada.", "Desciende lentamente hasta la posicion inicial."],
+    "mistakes": ["Rebotar en cada repeticion.", "Dejar que los tobillos pierdan estabilidad."],
+    "video": "assets/videos/elevacion_pantorrillas.mp4", "image": "assets/images/exercises/elevacion_pantorrillas.jpg"
+  },
+  {
+    "id": "step_up", "name": "Step-up", "english_name": "Step-up",
+    "summary": "Fuerza funcional", "group": "Tren inferior", "equipment": "Banco o plataforma",
+    "muscles": ["Cuadriceps", "Gluteos"], "level": "Principiante",
+    "description": "Subida controlada a una plataforma estable.",
+    "steps": ["Apoya un pie completo sobre una plataforma estable.", "Sube de forma controlada hasta quedar sobre la plataforma.", "Baja con control y alterna la pierna."],
+    "mistakes": ["Utilizar una plataforma inestable.", "Bajar dejandose caer."],
+    "video": "assets/videos/step_up.mp4", "image": "assets/images/exercises/step_up.jpg"
+  }
+]
